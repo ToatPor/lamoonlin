@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.7rem;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: "Prompt", sans-serif;
+}
+
+.container {
+  max-width: 117rem;
+  margin: 0 auto;
+  padding: 0 7rem;
+}
+
+.header {
+  background-color: orangered;
+  min-height: 90vh;
+}
+
+.head_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 3rem;
+}
+
+.head_content_img {
+  width: 10%;
+}
+
+.head_content_nav {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.head_content_nav_link:visited, .head_content_nav_link:link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.head_content_nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+  list-style: none;
+  gap: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
