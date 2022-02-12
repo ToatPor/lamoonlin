@@ -1,11 +1,18 @@
 @import "abstact/mixin";
 @import "abstact/variable";
 
+//Note
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
+
+//Note 
+@import "component/btn";
+
+
+//Note
 @import "layouts/grid";
 @import "layouts/header";
 @import "pages/home";

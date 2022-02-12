@@ -3,3 +3,38 @@ body {
   line-height: 1.6;
   font-family: "Prompt", sans-serif;
 }
+
+.header_text {
+  text-transform: uppercase;
+  color: $color_grey_light;
+  &_primary {
+    display: block;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: $font_size-large;
+    margin-bottom: $vertical-gutter-medium;
+    animation: animation_right 1s;
+  }
+  &_sub {
+    animation: animation_left 1s;
+    display: block;
+    font-weight: 500;
+    letter-spacing: 1.7px;
+    font-size: $font_size-medium;
+
+    // color: $color_grey_light;
+    &:nth-child(2) {
+      margin-bottom: $vertical-gutter-small;
+    }
+    &:nth-child(3) {
+      margin-bottom: $vertical-gutter-medium;
+    }
+
+    &_line2 {
+      animation: animation_right 1s;
+    }
+  }
+  &_span {
+    font-family: sans-serif;
+  }
+}

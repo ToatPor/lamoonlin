@@ -1,0 +1,35 @@
+@keyframes animation_right {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    // opacity: 1;
+    transform: translateX(1.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animation_left {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-1.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
