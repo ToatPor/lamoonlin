@@ -11,7 +11,7 @@ body {
     display: block;
     font-weight: 600;
     letter-spacing: 3px;
-    font-size: $font_size-large;
+    font-size: $font_size-super-large;
     margin-bottom: $vertical-gutter-medium;
     animation: animation_right 1s;
   }
@@ -37,4 +37,9 @@ body {
   &_span {
     font-family: sans-serif;
   }
+}
+
+.header_text_secondary {
+  font-weight: 600;
+  font-size: $font_size-medium;
 }
