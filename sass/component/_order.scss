@@ -1,0 +1,30 @@
+.order {
+  display: flex;
+  justify-content: center;
+  // gap: 7rem;
+  &:not(:last-child) {
+    margin-bottom: $vertical-gutter-large;
+  }
+  &_header.container {
+    margin-bottom: $vertical-gutter-medium;
+  }
+  &_img {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    &-image {
+      width: 60%;
+    }
+  }
+  &_text {
+    flex: 1;
+  }
+
+  &_number {
+    font-size: $font_size-super-large;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    opacity: 40%;
+    // border-bottom: 1px solid $color_grey_dark;
+  }
+}

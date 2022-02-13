@@ -2,6 +2,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   font-family: "Prompt", sans-serif;
+  color: $color_grey_dark;
 }
 
 .header_text {
@@ -42,4 +43,20 @@ body {
 .header_text_secondary {
   font-weight: 600;
   font-size: $font_size-medium;
+}
+.header_text_third {
+  font-weight: 600;
+  font-size: $font-size-medium-small;
+}
+
+.normal_text {
+  font-size: $font-size-defult;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.text_sub {
+  color: $color_primary;
+  font-weight: 500;
+  font-size: $font-size-defult;
 }

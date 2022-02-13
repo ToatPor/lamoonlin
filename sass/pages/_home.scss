@@ -1,4 +1,13 @@
 .section_about {
   padding: 9rem 0;
   display: flex;
+  gap: 7rem;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.section_order {
+  padding: 9rem 0;
 }

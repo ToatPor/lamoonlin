@@ -2,32 +2,51 @@
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   // text-align: center;
   gap: 2rem;
 
   &_history {
-    display: flex;
     gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
+    @include flex;
 
     &::after,
     &::before {
       content: "";
       flex-basis: 15%;
       display: block;
-      height: 2px;
+      height: 1.5px;
       background-color: $color_grey_dark;
     }
-  }
-
-  &_text {
-    font-size: $font-size-defult;
   }
 }
 
 //Todo
 .about_img {
   flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  // justify-content: center;
+  // gap: 2px;
+  // justify-content: center;
+  &-gallery {
+    // align-self: stretch;
+    flex-basis: 50%;
+    padding: 7px;
+    transition: transform 1s;
+    overflow: hidden;
+    // margin-top: auto;
+  }
+  &-img {
+    width: 100%;
+    border-radius: 3px;
+    transition: all 1s;
+    // overflow: hidden;
+
+    &:hover {
+      transform: scale(1.1);
+      border-radius: 3px;
+    }
+  }
 }
