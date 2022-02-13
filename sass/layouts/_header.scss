@@ -1,30 +1,24 @@
 .header {
-  background-color: orangered;
   min-height: 90vh;
+  position: relative;
+  background-image: url(img/bg_1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &_logo {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+
+    &_img {
+      height: 15rem;
+    }
+  }
 }
 
-.head_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 3rem;
-
-  &_img {
-    width: 10%;
-  }
-  &_nav {
-    flex-grow: 2;
-    &_link:visited,
-    &_link:link {
-      text-decoration: none;
-      color: $color-white;
-      font-size: 1.8rem;
-    }
-    &_list {
-      display: flex;
-      font-size: $font-size-defult;
-      list-style: none;
-      gap: 2rem;
-    }
-  }
+.header_text_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

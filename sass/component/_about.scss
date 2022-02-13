@@ -1,0 +1,33 @@
+.about_box {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  // text-align: center;
+  gap: 2rem;
+
+  &_history {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+
+    &::after,
+    &::before {
+      content: "";
+      flex-basis: 15%;
+      display: block;
+      height: 2px;
+      background-color: $color_grey_dark;
+    }
+  }
+
+  &_text {
+    font-size: $font-size-defult;
+  }
+}
+
+//Todo
+.about_img {
+  flex-basis: 50%;
+}

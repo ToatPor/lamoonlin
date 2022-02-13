@@ -1,8 +1,31 @@
-$color_grey: #868e96;
-$color_grey_dark: #212529;
+//Note  color defult
+$color_grey: #ced4da;
+$color_grey_dark: #343a40;
+$color_grey_light: #f1f3f5;
 
 $color_white: #fff;
 
+//Note color primary
+
+$color_primary: #fab005;
+$color_primary_light: #fff9db;
+
+//Note font size
+
 $font-size-defult: 1.6rem;
-$font_size-medium: 2.4rem;
-$font_size-large: 3.6rem;
+$font-size-medium: 3.6rem;
+$font_size-large: 4.4rem;
+$font_size-super-large: 7.4rem;
+
+//Note gutter
+$vertical-gutter-small: 1.2rem;
+$vertical-gutter-medium: 3.2rem;
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+line-height: normal-text 1.5
+              header below 1.5
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
