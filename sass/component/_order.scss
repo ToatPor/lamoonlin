@@ -1,6 +1,8 @@
 .order {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 4.8rem;
   // gap: 7rem;
   &:not(:last-child) {
     margin-bottom: $vertical-gutter-large;
@@ -17,7 +19,7 @@
     }
   }
   &_text {
-    flex: 1;
+    flex: 50%;
   }
 
   &_number {
