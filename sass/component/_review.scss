@@ -1,0 +1,29 @@
+.review {
+  background-color: $color-white;
+  opacity: 85%;
+  padding: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7rem;
+  width: 70%;
+  transform: skewX(-12deg);
+
+  &_text {
+    flex-basis: 50%;
+    transform: skewX(12deg);
+  }
+  &_shape {
+    transform: skewX(12deg);
+  }
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+  }
+
+  &_header {
+    padding: 7rem 0;
+  }
+}

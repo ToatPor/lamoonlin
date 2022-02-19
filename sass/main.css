@@ -220,6 +220,25 @@ body {
   transition: all 0.4s;
 }
 
+.btn_text:link, .btn_text:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fab005;
+  border-bottom: 1px solid #fab005;
+  transition: all 1s;
+}
+
+.btn_text:hover.btn_text_modify:hover {
+  color: #495057;
+  border-bottom: 1px solid transparent;
+  transform: translateY(-5px);
+}
+
+.btn_text:visited.btn_text_modify:visited {
+  transform: translateY(5px);
+}
+
 .about_box {
   flex-basis: 50%;
   display: flex;
@@ -305,6 +324,60 @@ body {
   opacity: 40%;
 }
 
+.menu {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+@media only screen and (max-width: 900px) {
+  .menu {
+    flex-wrap: wrap;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+    row-gap: 3rem;
+    justify-content: center;
+  }
+}
+.menu_box {
+  flex-basis: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .menu_box {
+    flex-basis: 49%;
+  }
+}
+.menu_img {
+  width: 100%;
+}
+
+.review {
+  background-color: #fff;
+  opacity: 85%;
+  padding: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
+  width: 70%;
+  transform: skewX(-12deg);
+}
+.review_text {
+  flex-basis: 50%;
+  transform: skewX(12deg);
+}
+.review_shape {
+  transform: skewX(12deg);
+}
+.review_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6rem;
+}
+.review_header {
+  padding: 7rem 0;
+}
+
 .container {
   max-width: 137rem;
   margin: 0 auto;
@@ -333,6 +406,23 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.bg_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 40%;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.bg_video_content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .section_about {
   padding: 9rem 0;
   display: flex;
@@ -346,4 +436,13 @@ body {
 
 .section_order {
   padding: 9rem 0;
+}
+
+.section_menu {
+  padding-bottom: 9rem;
+}
+
+.section_review {
+  padding-bottom: 9rem;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

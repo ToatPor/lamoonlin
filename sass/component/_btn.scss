@@ -17,6 +17,7 @@
     animation-delay: 1s;
     animation-fill-mode: backwards;
   }
+
   &:hover {
     transform: translateY(-2px);
 
@@ -28,7 +29,6 @@
 
   &::after {
     content: "";
-    // display: inline-block;
     width: 100%;
     height: 100%;
     background-color: $color_primary;
@@ -40,4 +40,26 @@
     z-index: -1;
     transition: all 0.4s;
   }
+}
+
+.btn_text {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: $font-size-defult;
+    color: $color_primary;
+    border-bottom: 1px solid $color_primary;
+    transition: all 1s;
+  }
+}
+
+.btn_text:hover.btn_text_modify:hover {
+  color: $color_grey_dark;
+  border-bottom: 1px solid transparent;
+  transform: translateY(-5px);
+  // box-shadow: 0 1rem 0 rgba($color_grey_dark, 0.2);
+}
+.btn_text:visited.btn_text_modify:visited {
+  transform: translateY(5px);
 }

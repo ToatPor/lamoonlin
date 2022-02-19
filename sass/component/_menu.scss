@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  column-gap: 16px;
+  // flex-wrap: wrap;
+
+  @media only screen and (max-width: 900px) {
+    flex-wrap: wrap;
+    column-gap: 7px;
+    row-gap: 3rem;
+    justify-content: center;
+  }
+  &_box {
+    // display: flex;
+    flex-basis: 100%;
+
+    @media only screen and (max-width: 900px) {
+      flex-basis: 49%;
+    }
+  }
+  &_img {
+    // display: block;
+    width: 100%;
+  }
+}
