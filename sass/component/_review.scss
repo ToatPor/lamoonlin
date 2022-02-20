@@ -1,6 +1,6 @@
 .review {
-  background-color: $color-white;
-  opacity: 85%;
+  background-color: rgba($color_white, 0.8);
+  // opacity: 85%;
   padding: 7rem;
   display: flex;
   justify-content: center;
@@ -14,16 +14,28 @@
     transform: skewX(12deg);
   }
   &_shape {
+    width: 17rem;
+    height: 17rem;
     transform: skewX(12deg);
+    clip-path: circle(50% at 50% 50%);
   }
 
   &_box {
     display: flex;
     flex-direction: column;
     row-gap: 6rem;
+    z-index: 1;
   }
-
+  &_img {
+    height: 100%;
+    width: 100%;
+  }
   &_header {
     padding: 7rem 0;
+  }
+
+  &_Customername {
+    margin-bottom: $vertical-gutter-small;
+    color: $color-primary;
   }
 }

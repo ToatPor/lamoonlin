@@ -4,11 +4,18 @@
   "description": "lamoonlin landing page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' sass/main.css -o sass/main.prefix.css",
+    "compress:css": "node-sass sass/main.css  sass/style.css --output-style compressed"
   },
   "author": "toat",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cross-env": "^7.0.3",
     "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0"
   }
 }
