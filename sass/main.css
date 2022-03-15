@@ -416,7 +416,7 @@ body {
 }
 
 .container {
-  max-width: 127rem;
+  max-width: 127wrem;
   margin: 0 auto;
 }
 
