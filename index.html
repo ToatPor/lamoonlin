@@ -61,9 +61,42 @@
   </head>
 
   <body>
+    <div class="navigation">
+      <input type="checkbox" id="checkbox" class="navigation_checkbox" />
+      <label for="checkbox" class="navigation_button">
+        <span class="navigation_icon"></span>
+      </label>
+      <div class="navigation_background">&nbsp;</div>
+
+      <nav class="navigation_nav">
+        <ul class="navigation_list">
+          <li class="navigation_items">
+            <a href="#about" class="navigation_link">About Us</a>
+          </li>
+          <li class="navigation_items">
+            <a href="#order" class="navigation_link">How to order</a>
+          </li>
+          <li class="navigation_items">
+            <a href="#menu" class="navigation_link">Menus</a>
+          </li>
+          <li class="navigation_items">
+            <a href="#review" class="navigation_link">Reviews</a>
+          </li>
+          <li class="navigation_items">
+            <a href="https://lin.ee/yF4W1vj" class="navigation_link"
+              >Order now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header_logo">
-        <img src="sass/img/logo.png" alt="" class="header_logo_img" />
+        <img
+          src="sass/img/logo.png"
+          alt="โลโก้ละมุนลิ้น"
+          class="header_logo_img"
+        />
       </div>
 
       <div class="header_text_box">
@@ -81,7 +114,7 @@
     </header>
 
     <main>
-      <section class="section_about container">
+      <section id="about" class="section_about container">
         <div class="about_box">
           <h2 class="header_text_secondary about_box_history">
             ความเป็นมาละมุนลิ้น
@@ -169,7 +202,7 @@
         </div>
       </section>
 
-      <section class="section_order">
+      <section id="order" class="section_order">
         <div class="order_header container">
           <span class="text_sub">วิธีในการสั่ง</span>
           <h3 class="header_text_third">
@@ -195,7 +228,7 @@
             <img
               src="sass/img/order1.jpg"
               class="order_img-image"
-              alt="order food"
+              alt="ขั้นตอนในการสั่งอาหาร"
             />
           </div>
 
@@ -203,7 +236,7 @@
             <img
               src="sass/img/order2.jpg"
               class="order_img-image"
-              alt="order food"
+              alt="ขั้นตอนในการสั่งอาหาร"
             />
           </div>
 
@@ -237,7 +270,7 @@
             <img
               src="sass/img/order3.jpg"
               class="order_img-image"
-              alt="order food"
+              alt="ขั้นตอนในการสั่งอาหาร"
             />
           </div>
         </div>
@@ -251,16 +284,32 @@
         </h3>
         <div class="menu u_margin_bottom-large">
           <figure class="menu_box">
-            <img src="sass/img/main1.jpg" alt="" class="menu_img" />
+            <img
+              src="sass/img/main1.jpg"
+              alt="เมนูละมุนลิ้น"
+              class="menu_img"
+            />
           </figure>
           <figure class="menu_box">
-            <img src="sass/img/main2.jpg" alt="" class="menu_img" />
+            <img
+              src="sass/img/main2.jpg"
+              alt="เมนูละมุนลิ้น"
+              class="menu_img"
+            />
           </figure>
           <figure class="menu_box">
-            <img src="sass/img/main3.jpg" alt="" class="menu_img" />
+            <img
+              src="sass/img/main3.jpg"
+              alt="เมนูละมุนลิ้น"
+              class="menu_img"
+            />
           </figure>
           <figure class="menu_box">
-            <img src="sass/img/main4.jpg" alt="" class="menu_img" />
+            <img
+              src="sass/img/main4.jpg"
+              alt="เมนูละมุนลิ้น"
+              class="menu_img"
+            />
           </figure>
         </div>
         <div class="menu_link_box utilities_center_text">
@@ -270,7 +319,7 @@
         </div>
       </section>
 
-      <section class="section_review">
+      <section id="review" class="section_review">
         <div class="bg_video">
           <video class="bg_video_content" autoplay loop muted>
             <source src="sass/img/slice.mp4" type="video/mp4" />
@@ -283,7 +332,11 @@
         <div class="review_box">
           <div class="review container u_margin_bottom-large">
             <figure class="review_shape">
-              <img src="sass/img/review1.jpg" alt="" class="review_img" />
+              <img
+                src="sass/img/review1.jpg"
+                alt="customer review"
+                class="review_img"
+              />
             </figure>
             <blockquote class="review_text normal_text">
               <figcaption class="review_Customername utilities_center_text">
@@ -297,7 +350,11 @@
 
           <div class="review container">
             <figure class="review_shape">
-              <img src="sass/img/review2.jpg" alt="" class="review_img" />
+              <img
+                src="sass/img/review2.jpg"
+                alt="customer review"
+                class="review_img"
+              />
             </figure>
             <blockquote class="review_text normal_text">
               <figcaption class="review_Customername utilities_center_text">
@@ -319,6 +376,7 @@
               </svg>
               <p class="order_number">01</p>
             </div>
+            <h3 class="header_text_third feature_header">คุณภาพ</h3>
             <p class="normal_text">
               อาหารทุกกล่องที่ทำออกมา ต้องได้คุณภาพครบ 100%
               ผ่านการปรุงจากเชฟมืออาชีพ อาหารต้องถูกแพ็คลงในถุงซีล
@@ -333,6 +391,7 @@
               </svg>
               <p class="order_number">02</p>
             </div>
+            <h3 class="header_text_third feature_header">บริการ</h3>
             <p class="normal_text">
               การจัดส่ง ต้องถึงมือของลูกค้า ภายในเวลาที่ตกลงกันไว้กับทางร้าน
               เราบริการด้วยใจ ใส่ใจทุกขั้นตอน ตั้งแต่ในครัว จนถึงลูกค้ารับอาหาร
@@ -345,6 +404,7 @@
               </svg>
               <p class="order_number">03</p>
             </div>
+            <h3 class="header_text_third feature_header">ใบกำกับภาษี</h3>
             <p class="normal_text">
               ทางร้านละมุนลิ้น มีบริการออกใบกำกับภาษีเต็มรูปแบบ หรือ
               สามารถออกบิลบริษัท เพียงแจ้งกับทางร้าน
@@ -355,6 +415,70 @@
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer_box">
+        <div class="footer_social">
+          <figure class="logo utilities_center_text u_margin_bottom-medium">
+            <a href="/">
+              <img
+                src="sass/img/logo.png"
+                alt="โลโก้ละมุนลิ้น"
+                class="footer_logo"
+            /></a>
+          </figure>
+          <ul class="footer_list">
+            <li class="footer_items">
+              <a href="https://www.facebook.com/lamoon.linbox">
+                <svg class="footer_icon">
+                  <use xlink:href="sass/img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer_items">
+              <a href="https://lin.ee/yF4W1vj">
+                <svg class="footer_icon">
+                  <use xlink:href="sass/img/sprite.svg#icon-chat"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer_items">
+              <a href="tel:0645546362">
+                <svg class="footer_icon">
+                  <use xlink:href="sass/img/sprite.svg#icon-mobile"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_contract">
+          <p class="header_text_third">ติดต่อเราได้ที่</p>
+          <address class="footer_address">
+            <p class="normal_text footer_address_modify">
+              831 ซ.เจริญกรุง67 แขวงยานนาวา เขตสาทร กทม 10120
+            </p>
+          </address>
+          <p class="normal_text">
+            <a href="tel:0645546362" class="footer_link">Tel: 064-554-6362</a>
+          </p>
+          <p class="normal_text">
+            <a href="https://lin.ee/yF4W1vj" class="footer_link"
+              >Line: @lamoonlin
+            </a>
+          </p>
+          <p class="normal_text">
+            <a href="mailto:lamoon.linbox@gmail.com" class="footer_link"
+              >E-mail: lamoon.linbox@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="footer_time">
+          <p class="header_text_third">เวลาเปิดทำการ</p>
+          <p class="normal_text">เปิดวันนักขัตฤกษ์ วันหยุดราชการ</p>
+          <p class="normal_text">เปิดทำการ 8.00 - 18.00</p>
+          <p class="normal_text">(สั่งล่วงหน้า 1-2 วัน)</p>
+        </div>
+      </div>
+    </footer>
+    <script src="javascript/sciprt.js"></script>
   </body>
 </html>

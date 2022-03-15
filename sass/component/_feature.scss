@@ -1,11 +1,11 @@
 .feature {
   display: flex;
-  column-gap: 2.4rem;
+  column-gap: 3.6rem;
 
   &_box {
     flex-basis: 33.3333%;
     padding: 3rem;
-    box-shadow: 0 0 0.2rem 0 rgba($color_grey_dark, 0.3);
+    box-shadow: 0 0 0.5rem 0 rgba($color_grey_dark, 0.3);
     border-radius: 3px;
     &_in {
       display: flex;
@@ -19,5 +19,10 @@
     fill: $color-primary;
     height: 5.2rem;
     width: 5.2rem;
+  }
+
+  &_header {
+    color: $color-primary;
+    margin-bottom: $vertical-gutter-small;
   }
 }

@@ -1,0 +1,57 @@
+.footer {
+  padding: 4rem 0;
+
+  &_box {
+    padding: 6rem;
+    display: flex;
+    column-gap: 3rem;
+    border-top: 0.5px solid rgba($color_grey_dark, 0.5);
+    align-items: center;
+  }
+
+  &_logo {
+    height: 13rem;
+  }
+  &_social {
+    flex-basis: 33.333%;
+  }
+  &_contract {
+    flex-basis: 33.333%;
+  }
+  &_map {
+    flex-basis: 33.333%;
+  }
+  &_list {
+    display: flex;
+    list-style: none;
+    column-gap: 3rem;
+    justify-content: center;
+  }
+  &_icon {
+    height: 4rem;
+    width: 4rem;
+  }
+  &_contract {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  &_address_modify {
+    font-family: inherit;
+    font-style: normal;
+    font-size: $font-size-defult;
+  }
+
+  &_link {
+    text-decoration: none;
+    color: $color_grey_dark;
+  }
+
+  &_time {
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+}
