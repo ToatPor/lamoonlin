@@ -3,9 +3,9 @@
   column-gap: 16px;
   // flex-wrap: wrap;
 
-  @media only screen and (max-width: 900px) {
+  @include respondSive(small_tablet) {
     flex-wrap: wrap;
-    column-gap: 7px;
+    column-gap: 12px;
     row-gap: 3rem;
     justify-content: center;
   }
@@ -13,12 +13,17 @@
     // display: flex;
     flex-basis: 100%;
 
-    @media only screen and (max-width: 900px) {
+    @include respondSive(small_tablet) {
+      text-align: center;
       flex-basis: 49%;
     }
   }
   &_img {
     // display: block;
     width: 100%;
+
+    @include respondSive(small_tablet) {
+      width: 95%;
+    }
   }
 }

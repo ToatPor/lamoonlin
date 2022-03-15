@@ -8,11 +8,14 @@
 
 html {
   font-size: 62.5%;
-}
 
+  @include respondSive(small_tablet) {
+    font-size: 56.25%;
+  }
+}
 body {
   box-sizing: border-box;
-  padding: 1.7rem;
+  padding: 2.4rem;
 }
 
 /*

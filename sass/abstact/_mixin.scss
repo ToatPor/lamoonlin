@@ -3,3 +3,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin respondSive($breakpoint) {
+  @if $breakpoint == small_tablet {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+} ;

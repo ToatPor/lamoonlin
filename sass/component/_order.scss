@@ -8,6 +8,7 @@
     margin-bottom: $vertical-gutter-large;
   }
   &_header.container {
+    margin-left: $horizontal-gutter-medium;
     margin-bottom: $vertical-gutter-medium;
   }
   &_img {
@@ -19,6 +20,7 @@
     }
   }
   &_text {
+    padding: $horizontal-gutter-medium;
     flex: 50%;
   }
 

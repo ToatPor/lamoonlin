@@ -3,8 +3,8 @@
   display: flex;
   gap: 7rem;
 
-  @media only screen and (max-width: 900px) {
-    flex-direction: column;
+  @include respondSive(small_tablet) {
+    gap: 1.6rem;
   }
 }
 
