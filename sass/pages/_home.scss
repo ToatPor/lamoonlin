@@ -3,8 +3,11 @@
   display: flex;
   gap: 7rem;
 
-  @include respondSive(small_tablet) {
-    gap: 1.6rem;
+  @include respondSive(phone) {
+    gap: 4.8rem;
+  }
+  @include respondSive(tablet) {
+    flex-direction: column;
   }
 }
 

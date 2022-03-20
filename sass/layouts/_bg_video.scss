@@ -8,6 +8,9 @@
   height: 100%;
   width: 100%;
   z-index: -1;
+  @include respondSive(phone) {
+    opacity: 50%;
+  }
   &_content {
     height: 100%;
     width: 100%;

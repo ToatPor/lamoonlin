@@ -61,36 +61,36 @@
   </head>
 
   <body>
-    <div class="navigation open_close">
-      <input type="checkbox" id="checkbox" class="navigation_checkbox" />
-      <label for="checkbox" class="navigation_button">
-        <span class="navigation_icon"></span>
-      </label>
-      <div class="navigation_background">&nbsp;</div>
-
-      <nav class="navigation_nav">
-        <ul class="navigation_list">
-          <li class="navigation_items">
-            <a href="#about" class="navigation_link">About Us</a>
-          </li>
-          <li class="navigation_items">
-            <a href="#order" class="navigation_link">How to order</a>
-          </li>
-          <li class="navigation_items">
-            <a href="#menu" class="navigation_link">Menus</a>
-          </li>
-          <li class="navigation_items">
-            <a href="#review" class="navigation_link">Reviews</a>
-          </li>
-          <li class="navigation_items">
-            <a href="https://lin.ee/yF4W1vj" class="navigation_link"
-              >Order now</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
     <header class="header">
+      <div class="navigation">
+        <input type="checkbox" id="checkbox" class="navigation_checkbox" />
+        <label for="checkbox" class="navigation_button">
+          <span class="navigation_icon"></span>
+        </label>
+        <div class="navigation_background">&nbsp;</div>
+
+        <nav class="navigation_nav">
+          <ul class="navigation_list">
+            <li class="navigation_items">
+              <a href="#about" class="navigation_link">About Us</a>
+            </li>
+            <li class="navigation_items">
+              <a href="#order" class="navigation_link">How to order</a>
+            </li>
+            <li class="navigation_items">
+              <a href="#menu" class="navigation_link">Menus</a>
+            </li>
+            <li class="navigation_items">
+              <a href="#review" class="navigation_link">Reviews</a>
+            </li>
+            <li class="navigation_items">
+              <a href="https://lin.ee/yF4W1vj" class="navigation_link"
+                >Order now</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="header_logo">
         <img
           src="sass/img/logo.png"
@@ -148,9 +148,23 @@
           </figure>
           <figure class="about_img-gallery">
             <img
+              src="sass/img/menu5.jpg"
+              class="about_img-img"
+              alt="ซี่โครงหมูอบผัดกระเพรา"
+            />
+          </figure>
+          <figure class="about_img-gallery">
+            <img
+              src="sass/img/menu3.jpg"
+              class="about_img-img"
+              alt="ไก่ผัดเห็ดฟาง"
+            />
+          </figure>
+          <figure class="about_img-gallery">
+            <img
               src="sass/img/menu2.jpg"
               class="about_img-img"
-              alt="ไก่ย่างละมุนลิ้น"
+              alt="สลัดไก่ย่างละมุนลิ้น"
             />
           </figure>
 
@@ -158,14 +172,14 @@
             <img
               src="sass/img/menu4.jpg"
               class="about_img-img"
-              alt="เมนูคอหมูย่าง"
+              alt="เมนูหมูสามชั้นต้มพะโล้"
             />
           </figure>
           <figure class="about_img-gallery">
             <img
-              src="sass/img/menu5.jpg"
+              src="sass/img/menu6.jpg"
               class="about_img-img"
-              alt="เมนูหมูสามชั้นต้มพะโล้"
+              alt="ซี่โครงหมูอบ"
             />
           </figure>
         </div>
@@ -205,11 +219,10 @@
       <section id="order" class="section_order">
         <div class="order_header container">
           <span class="text_sub">วิธีในการสั่ง</span>
-          <h3 class="header_text_third">
+          <h3 class="header_text_secondary">
             สุขภาพที่ดีเริ่มต้นได้เพียง 3 ขั้นตอน
           </h3>
         </div>
-
         <div class="container order">
           <div class="order_text">
             <p class="order_number">01</p>
@@ -368,6 +381,11 @@
         </div>
       </section>
       <section class="section_feature">
+        <h3
+          class="header_text_secondary utilities_center_text u_margin_bottom-large about_box_history"
+        >
+          ทำไมถึงต้องละลุนลิ้น
+        </h3>
         <div class="feature container">
           <div class="feature_box">
             <div class="feature_box_in">

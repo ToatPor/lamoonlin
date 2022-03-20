@@ -7,19 +7,20 @@ const navigationIcon = document.querySelector(".navigation_icon");
 const checkBox = document.getElementById("checkbox");
 const openClose = document.querySelector(".open_close");
 const allLink = document.querySelectorAll("a:link");
-const link = [...allLink];
+const links = Array.from(allLink);
+
+//new way to create array
 
 //external link
 const externalLink = function (link) {
-  const exLink = link.filter((cur) => {
-    const arr = cur.getAttribute("href").charAt(0) !== "#";
-    return arr;
-  });
-  exLink.forEach((cur) => {
+  const linked = Array.from(allLink).filter(
+    (cur) => cur.getAttribute("href").charAt(0) !== "#"
+  );
+  linked.forEach((cur) => {
     cur.addEventListener("click", function (event) {
       event.preventDefault();
       const href = cur.getAttribute("href");
-      console.log(href);
+      // console.log(href);
       href === "https://lin.ee/yF4W1vj" &&
         window.open("https://lin.ee/yF4W1vj") &&
         checkBox.removeAttribute("checked");
@@ -33,23 +34,22 @@ const externalLink = function (link) {
 };
 //internal link
 const toggleChecked = function (arr) {
-  const internalLink = arr.filter((cur) =>
-    cur.getAttribute("href").startsWith("#")
+  const links = Array.from(allLink).filter(
+    (cur) => cur.getAttribute("href").charAt(0) === "#"
   );
-  internalLink.forEach((cur) => {
+  links.forEach((cur) => {
     cur.addEventListener("click", function (e) {
       e.preventDefault();
-      const href = cur.getAttribute("href");
-      // console.log(href);
-      href === "#" &&
+      const linked = cur.getAttribute("href");
+      if (linked === "#") {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
         });
-      if (href !== "#" && href.startsWith("#")) {
-        //go direct to href each section
-        const hrefEach = document.querySelector(href);
-        hrefEach.scrollIntoView({
+      }
+      if (linked.startsWith("#") && linked !== "#") {
+        const eachLink = document.querySelector(linked);
+        eachLink.scrollIntoView({
           behavior: "smooth",
         });
         checkBox.removeAttribute("checked");
@@ -77,7 +77,7 @@ const pressEsc = function (check) {
   });
 };
 toggleButton(checkBox, navigationButton);
-externalLink(link);
-toggleChecked(link);
+externalLink(links);
+toggleChecked(links);
 clickBackground(navigationNav, checkBox);
 pressEsc(checkBox);

@@ -3,17 +3,17 @@
   column-gap: 16px;
   // flex-wrap: wrap;
 
-  @include respondSive(small_tablet) {
+  @include respondSive(tablet) {
     flex-wrap: wrap;
-    column-gap: 12px;
-    row-gap: 3rem;
+    column-gap: 1rem;
     justify-content: center;
+    row-gap: 1rem;
   }
   &_box {
     // display: flex;
     flex-basis: 100%;
 
-    @include respondSive(small_tablet) {
+    @include respondSive(tablet) {
       text-align: center;
       flex-basis: 49%;
     }
@@ -22,8 +22,8 @@
     // display: block;
     width: 100%;
 
-    @include respondSive(small_tablet) {
-      width: 95%;
-    }
+    // @include respondSive(tablet) {
+    //   width: 90%;
+    // }
   }
 }

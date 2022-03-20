@@ -1,11 +1,11 @@
 .about_box {
-  flex-basis: 50%;
+  flex-basis: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   // text-align: center;
   gap: 2rem;
-  padding: $horizontal-gutter-medium;
+  padding: $padding-size-medium;
 
   &_history {
     gap: 2rem;
@@ -24,20 +24,27 @@
 
 //Todo
 .about_img {
-  flex-basis: 50%;
+  flex-basis: 45%;
+  row-gap: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   // justify-content: center;
-  // gap: 2px;
-  // justify-content: center;
+
   &-gallery {
-    // align-self: stretch;
+    // align-items: center;
     flex-basis: 50%;
     padding: 7px;
     transition: transform 1s;
     overflow: hidden;
+    // flex-shrink: 2;
     // margin-top: auto;
+    @include respondSive(tablet) {
+      flex-basis: 33.333%;
+    }
+    // @include respondSive(phone) {
+    //   flex-basis: 50%;
+    // }
   }
   &-img {
     width: 100%;

@@ -1,5 +1,5 @@
 .footer {
-  padding: 4rem 0;
+  padding-top: 4rem;
 
   &_box {
     padding: 6rem;
@@ -7,6 +7,9 @@
     column-gap: 3rem;
     border-top: 0.5px solid rgba($color_grey_dark, 0.5);
     align-items: center;
+    @include respondSive(phone) {
+      padding: 2.8rem;
+    }
   }
 
   &_logo {

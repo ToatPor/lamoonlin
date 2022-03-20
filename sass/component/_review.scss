@@ -8,16 +8,29 @@
   column-gap: 7rem;
   width: 70%;
   transform: skewX(-12deg);
+  @include respondSive(tablet) {
+    transform: skewX(0);
+    flex-direction: column;
+    row-gap: 3rem;
+  }
 
   &_text {
     flex-basis: 50%;
     transform: skewX(12deg);
+    @include respondSive(tablet) {
+      transform: skewX(0);
+    }
   }
   &_shape {
     width: 17rem;
     height: 17rem;
     transform: skewX(12deg);
     clip-path: circle(50% at 50% 50%);
+    @include respondSive(tablet) {
+      transform: skewX(0);
+      width: 20rem;
+      height: 20rem;
+    }
   }
 
   &_box {
