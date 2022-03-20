@@ -18,6 +18,9 @@ html {
   @include respondSive(phone) {
     font-size: 43.75%;
   }
+  @include respondSive(phone_small) {
+    font-size: 37.5%;
+  }
 }
 body {
   box-sizing: border-box;

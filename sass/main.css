@@ -114,6 +114,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 31em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -150,6 +156,12 @@ body {
           animation: animation_right 1s;
 }
 
+@media only screen and (max-width: 31em) {
+  .header_text_primary {
+    letter-spacing: 1px;
+  }
+}
+
 .header_text_sub {
   -webkit-animation: animation_left 1s;
           animation: animation_left 1s;
@@ -157,6 +169,12 @@ body {
   font-weight: 500;
   letter-spacing: 1.7px;
   font-size: 3.8rem;
+}
+
+@media only screen and (max-width: 31em) {
+  .header_text_sub {
+    letter-spacing: 1px;
+  }
 }
 
 .header_text_sub:nth-child(2) {
@@ -188,13 +206,13 @@ body {
 }
 
 .normal_text {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .text_sub {
   color: #fab005;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .utilities_center_text {
@@ -224,7 +242,7 @@ body {
 
 .btn:link, .btn:visited {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 1.8rem 4.8rem;
   color: #fff;
   background-color: #fab005;
@@ -301,9 +319,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   gap: 2rem;
   padding: 3rem;
 }
@@ -763,7 +779,7 @@ body {
   text-align: center;
 }
 
-.navigation_items {
+.navigation_items:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -807,7 +823,7 @@ body {
 }
 
 .header {
-  min-height: 90vh;
+  min-height: 100vh;
   position: relative;
   background-image: url(img/bg_1.jpg);
   background-size: cover;
@@ -875,7 +891,11 @@ body {
 
 @media only screen and (max-width: 38em) {
   .footer_box {
-    padding: 2.8rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 4.4rem;
   }
 }
 
@@ -893,9 +913,12 @@ body {
       flex-basis: 33.333%;
 }
 
-.footer_map {
-  -ms-flex-preferred-size: 33.333%;
-      flex-basis: 33.333%;
+@media only screen and (max-width: 38em) {
+  .footer_contract {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer_list {
@@ -929,7 +952,7 @@ body {
 .footer_address_modify {
   font-family: inherit;
   font-style: normal;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .footer_link {
@@ -948,6 +971,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 1.5rem;
+}
+
+@media only screen and (max-width: 38em) {
+  .footer_time {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .section_about {

@@ -73,7 +73,7 @@
     text-align: center;
   }
 
-  &_items {
+  &_items:not(:last-child) {
     margin-bottom: 2rem;
   }
 

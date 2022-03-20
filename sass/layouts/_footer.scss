@@ -8,7 +8,8 @@
     border-top: 0.5px solid rgba($color_grey_dark, 0.5);
     align-items: center;
     @include respondSive(phone) {
-      padding: 2.8rem;
+      flex-direction: column;
+      row-gap: 4.4rem;
     }
   }
 
@@ -17,12 +18,14 @@
   }
   &_social {
     flex-basis: 33.333%;
+    @include respondSive(phone) {
+    }
   }
   &_contract {
     flex-basis: 33.333%;
-  }
-  &_map {
-    flex-basis: 33.333%;
+    @include respondSive(phone) {
+      align-items: center;
+    }
   }
   &_list {
     display: flex;
@@ -56,5 +59,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+    @include respondSive(phone) {
+      align-items: center;
+    }
   }
 }
