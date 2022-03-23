@@ -8,7 +8,6 @@
 
 html {
   font-size: 62.5%;
-
   @include respondSive(tablet_landscape) {
     font-size: 56.25%;
   }
@@ -20,6 +19,9 @@ html {
   }
   @include respondSive(phone_small) {
     font-size: 37.5%;
+  }
+  @include respondSive(iphone) {
+    font-size: 35%;
   }
 }
 body {

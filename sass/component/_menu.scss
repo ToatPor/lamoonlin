@@ -17,6 +17,9 @@
       text-align: center;
       flex-basis: 49%;
     }
+    @include respondSive(iphone) {
+      flex-basis: 90%;
+    }
   }
   &_img {
     // display: block;

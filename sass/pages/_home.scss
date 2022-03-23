@@ -1,7 +1,8 @@
 .section_about {
   padding: 9rem 0;
   display: flex;
-  gap: 7rem;
+  gap: 4.5rem;
+  align-items: center;
 
   @include respondSive(phone) {
     gap: 4.8rem;
