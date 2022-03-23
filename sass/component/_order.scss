@@ -16,6 +16,10 @@
     padding-bottom: $padding-size-big;
     display: flex;
     flex-direction: column;
+
+    @include respondSive(tablet) {
+      padding-left: $padding-size-small;
+    }
   }
   &_img {
     flex-basis: 50%;
